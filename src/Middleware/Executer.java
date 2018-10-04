@@ -132,8 +132,8 @@ public class Executer {
     static CmdBuilder makeReserveCarCmd = (id,customerID,location) -> "ReserveCar,"+id+","+customerID+","+location;
     static CmdBuilder makeReserveRoomCmd = (id,customerID,location) -> "ReserveRoom,"+id+","+customerID+","+location;
     static CmdBuilder makeQueryFlightCmd = (id,customerID,flightNumber) -> "QueryFlight,"+id+","+flightNumber;
-    static CmdBuilder makeQueryCarCmd = (id,customer,location) -> "QueryCar,"+id+","+location;
-    static CmdBuilder makeQueryRoomCmd = (id,customer,location) -> "QueryRoom,"+id+","+location;
+    static CmdBuilder makeQueryCarCmd = (id,customer,location) -> "QueryCars,"+id+","+location;
+    static CmdBuilder makeQueryRoomCmd = (id,customer,location) -> "QueryRooms,"+id+","+location;
 
 }
 

@@ -27,6 +27,9 @@ public class Executer {
                 return TCPMiddleware.roomExecute(command);
             }
             case AddCustomerID: {
+                TCPMiddleware.carExecute(command);
+                TCPMiddleware.roomExecute(command);
+                TCPMiddleware.flightExecute(command);
                 return TCPMiddleware.customerExecute(command);
             }
             case DeleteFlight: {
@@ -39,6 +42,9 @@ public class Executer {
                 return TCPMiddleware.roomExecute(command);
             }
             case DeleteCustomer: {
+                TCPMiddleware.flightExecute(command);
+                TCPMiddleware.roomExecute(command);
+                TCPMiddleware.carExecute(command);
                 return TCPMiddleware.customerExecute(command);
             }
             case QueryFlight: {
